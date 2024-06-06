@@ -1,0 +1,27 @@
+
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0); 
+
+}
+
+.about-me-container h2 {
+    margin-bottom: 10px;
+
+ }
+
+ .about-me-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    
+ }
