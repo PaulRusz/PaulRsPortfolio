@@ -22,7 +22,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0)
 }
 
+.contact-form p {
+    font-size: 25px;
+}
+
 .name {
+    margin-top: 10px;
     margin-bottom: 10px;
     height: 20px;
     width: 150px;
