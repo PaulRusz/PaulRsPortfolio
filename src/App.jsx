@@ -1,27 +1,52 @@
-import './App.css'
 
-import AboutMe from './componets/AboutMe';
-import Contact from './componets/Contact';
-import Header from './componets/Header';
-import Navbar from './componets/Navbar';
-import Portfolio from './componets/Portfolio';
-import Resume from './componets/Resume';
+import { Outlet } from 'react-router-dom';
 
+import Header from './components/Header'
+import Navbar from "./components/Navbar";
 
+// The Outlet component will conditionally swap between the different pages according to the URL
 function App() {
   return (
-    <div>
-
-      <Header />
-      <Navbar />  
-      <AboutMe />
-      <Contact />
-      <Portfolio />
-      <Resume />
-
-    </div>
+    <>
+    <Header />
+    <Navbar />
+    <Outlet />
+    </>
   )
 }
+
+
+
+
+
+
+
+
+
+// import './App.css'
+
+// import AboutMe from './pages/AboutMe';
+// import Contact from './pages/Contact';
+// import Header from './pages/Header';
+// import Navbar from './pages/Navbar';
+// import Portfolio from './pages/Portfolio';
+// import Resume from './pages/Resume';
+
+
+// function App() {
+//   return (
+//     <div>
+
+//       <Header />
+//       <Navbar />  
+//       <AboutMe />
+//       <Contact />
+//       <Portfolio />
+//       <Resume />
+
+//     </div>
+//   )
+// }
 
 
 
