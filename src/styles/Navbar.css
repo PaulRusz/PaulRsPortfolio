@@ -5,12 +5,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+
 }
 
 .links {
-    width: 115px;
+    width: 100px;
 }
 
 .navbar a {
@@ -21,6 +23,11 @@
     text-decoration: none;
     border-radius: 10px; /* Add border radius for smoother edges */
     transition: color 0.3s, background-color 0.3s; /* smooth color and background color transition */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .navbar a:hover {
