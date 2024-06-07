@@ -2,6 +2,11 @@
 .navbar {
     background: purple; 
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0)
 }
 
 .navbar a {
@@ -9,4 +14,12 @@
     font-size: 1.3 rem;
     margin: 5px;
     line-height: 3;
+    text-decoration: none;
+    border-radius: 10px; /* Add border radius for smoother edges */
+    transition: color 0.3s, background-color 0.3s; /* smooth color and background color transition */
+}
+
+.navbar a:hover {
+    color: black; 
+    background-color: #CF9FFF;
 }
