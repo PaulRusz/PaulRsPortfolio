@@ -5,7 +5,7 @@ function AboutMe() {
 
     return (
         <div className="about-me-container">
-            <h1>About Me</h1>
+            <h1>             <img className="monacoImage" src="src/assets/Monaco.png" alt="Me in Monaco" />About Me             <img className="weddingImage" src="src/assets/wedding.png" alt="Wedding Image" /></h1>
 
             <p> 
             Hey! My name is Paul.  I’m from New Jersey originally but have lived in Delaware a large majority of my life.  

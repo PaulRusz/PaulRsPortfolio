@@ -28,19 +28,21 @@ function Contact() {
         <div className="contact-container">
             <h1>Contact Me</h1>
 
-            <p>Have a question or want to get in touch?  Feel free to reach out! Fill out the form below, 
-                email me, or checkout one of the links below.
+            <p>Have a question or want to get in touch?  
+            
+                Feel free to reach out! 
+                Fill out the form below, email me, or checkout one of the links below.
             </p>
 
             <form className="contact-form" onSubmit={handleSubmit}> 
-                <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" ></input>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" ></input>
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" ></textarea>
-                <button type="submit"> Send </button>
+                <input className="name" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" ></input>
+                <input className="email" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" ></input>
+                <textarea className="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message..." ></textarea>
+                <button className="button" type="submit"> Send </button>
 
             </form>
 
-            <ul> 📧 Email:  PaulRuszkay@gmail.com </ul>
+            <ul><a href="mailto:PaulRuszkay@gmail.com"> 📧 Email:  PaulRuszkay@gmail.com </a></ul>
             <ul><a href="https://github.com/PaulRusz"> 📁 GitHub: github.com/PaulRusz </a></ul>
             <ul><a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/"> Linkedin - Paul Ruszkay </a></ul>
 

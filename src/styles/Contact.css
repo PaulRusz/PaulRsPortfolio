@@ -14,9 +14,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
     padding: 20px;
     margin: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0)
+}
+
+.name {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 150px;
+}
+
+.name::placeholder {
+    text-align: center;
+}
+
+.email {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+}
+
+.email::placeholder {
+    text-align: center;
+}
+
+.message {
+    margin-bottom: 10px;
+    height: 150px;
+    width: 400px;
+}
+
+.message::placeholder {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.button {
+    background-color: #06d9ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    color: black;
+    background-color: #00badc;
 }

@@ -1,18 +1,19 @@
 
 .header {
-    background: lightblue;
+    background: #99efff;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
-
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 .header h1 {
     margin: 0;
-    padding-top: 75px;
+    padding-top: 25px;
     text-align: center;
     color: black;
     font-size: 4rem;
