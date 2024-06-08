@@ -18,7 +18,7 @@
     padding: 20px;
     margin: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0)
 }
 
@@ -31,6 +31,7 @@
     margin-bottom: 10px;
     height: 20px;
     width: 150px;
+    border-radius: 50px;
 }
 
 .name::placeholder {
@@ -41,6 +42,7 @@
     margin-bottom: 10px;
     height: 20px;
     width: 200px;
+    border-radius: 50px;
 }
 
 .email::placeholder {
@@ -51,6 +53,7 @@
     margin-bottom: 10px;
     height: 150px;
     width: 400px;
+    border-radius: 20px;
 }
 
 .message::placeholder {
@@ -63,8 +66,9 @@
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
+    width: 150px;
 
 }
 
@@ -76,4 +80,21 @@
 .messageSent {
     color: gold;
     font-size: 4.2em;
+}
+
+/* allows the text to begin later in the text boxes */
+input[type="text"], textarea {
+    padding-left: 10px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0)
 }
