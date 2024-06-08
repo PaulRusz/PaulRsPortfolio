@@ -72,3 +72,8 @@
     color: black;
     background-color: #00badc;
 }
+
+.messageSent {
+    color: gold;
+    font-size: 4.2em;
+}

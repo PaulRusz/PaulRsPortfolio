@@ -16,10 +16,31 @@ function Contact() {
         setFormData({ ...formData, [name]: value })
     }
 
+    const [ isFormSubmitted, setIsFormSubmitted ] = useState(false)
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Save form data to localStorage
+
+        if (formData.name.trim() === '' || !formData.email.includes('@')) {
+            // Handle form validation errors
+            return;
+        }
+
+        // Form data is valid, proceed with submission
         localStorage.setItem('formData', JSON.stringify(formData))
+        setIsFormSubmitted(true)
+
+        // Reset form fields after submission
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        })
+
+        // Clear "Message sent!" text after a delay
+        setTimeout(() => {
+            setIsFormSubmitted(false)
+        }, 3000)
 
         // Render the last submission to the page
         console.log(formData)
@@ -45,6 +66,17 @@ function Contact() {
             </p>
 
             <form className="contact-form" onSubmit={handleSubmit}> 
+            {isFormSubmitted ? (
+                    <motion.p 
+                        className="messageSent"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1 }}
+                    >
+                        Message sent!
+                    </motion.p>
+                ) : null}
                 <p> Send me a message </p>
                 <input className="name" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" ></input>
                 <input className="email" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" ></input>
