@@ -1,6 +1,6 @@
 
 .navbar {
-    background: purple; 
+    background: #003039; 
     height: 60px;
     display: flex;
     justify-content: center;
@@ -11,8 +11,22 @@
     border-radius: 5px;
 }
 
+.logo {
+    color: white;
+    font-size: 3rem; 
+    font-weight: bolder; 
+    margin-right: auto;
+    margin-left: 10px; 
+    padding-left: 10px;
+    padding-right: 90px;
+}
+
 .links {
     width: 130px;
+    flex: 1; /* Allow the links to take up the remaining space */
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    font-weight: 300;
 }
 
 .navbar a {
@@ -34,5 +48,6 @@
 
 .navbar a:hover {
     color: black; 
-    background-color: #CF9FFF;
+    background-color: #99efff;
 }
+

@@ -1,9 +1,19 @@
 // Imports the AboutMe.css to grant access to additional classNames
 import '../styles/AboutMe.css';
+import { motion } from "framer-motion";
 
 function AboutMe() {
 
     return (
+
+         // Code for 'fade in' transition
+        <motion.div
+        className="page1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }}
+        exit={{ opacity: 0 }}
+      >
+
         <div className="about-me-container">
             <h1>             <img className="monacoImage" src="src/assets/Monaco.png" alt="Me in Monaco" />About Me             <img className="weddingImage" src="src/assets/wedding.png" alt="Wedding Image" /></h1>
 
@@ -19,6 +29,8 @@ function AboutMe() {
             I’m eager to learn and passionate about continuing to create and solve complex problems.
             </p>
         </div>
+
+        </motion.div>
     )
 }
 

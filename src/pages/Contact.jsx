@@ -1,6 +1,7 @@
 // Imports the Contact.css to grant access to additional classNames
 import '../styles/Contact.css';
 import { useState } from 'react';
+import { motion } from "framer-motion";
 
 function Contact() {
 
@@ -25,6 +26,15 @@ function Contact() {
     }
 
     return (
+
+        // Code for 'fade in' transition
+        <motion.div
+        className="page1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }}
+        exit={{ opacity: 0 }}
+      >
+
         <div className="contact-container">
             <h1>Contact Me</h1>
 
@@ -48,6 +58,8 @@ function Contact() {
             <ul><a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/"> Linkedin - Paul Ruszkay </a></ul>
 
         </div>
+
+        </motion.div>
     )
 }
 
