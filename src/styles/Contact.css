@@ -13,7 +13,7 @@
 
 .contact-container p {
     font-size: 20px;
-    line-height: .5;
+
 }
 
 .contact-form { 
@@ -47,7 +47,7 @@
 .email {
     margin-bottom: 10px;
     height: 20px;
-    width: 200px;
+    width: 40%;
     border-radius: 50px;
 }
 
@@ -58,7 +58,7 @@
 .message {
     margin-bottom: 10px;
     height: 150px;
-    width: 400px;
+    width: 60%;
     border-radius: 20px;
 }
 

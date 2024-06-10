@@ -1,3 +1,5 @@
+
+
 .navbar {
     background: #003039; 
     height: 60px;
@@ -48,4 +50,40 @@
 .navbar a:hover {
     color: black; 
     background-color: #99efff;
+}
+
+
+.hamburger-menu {
+    display: none; /* Hide the hamburger menu button by default */
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu button on smaller screens */
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .links.show {
+        display: flex; /* Show the links when the menu is toggled */
+    }
+
+    .links {
+        display: none; /* Hide the links by default on smaller screens */
+        flex-direction: column; /* Display the links vertically on smaller screens */
+        position: relative;
+        top: 60px; /* Adjust the top position to align with the navbar */
+        background: #003039; /* Set background color for the dropdown menu */
+        width: 50%;
+        max-height: 50px; /* Set a maximum height for the dropdown menu */
+        text-align: center;
+        overflow-x: visible;
+    }
+
+    .links a {
+        display: block;
+        padding: 10px;
+    }
 }
