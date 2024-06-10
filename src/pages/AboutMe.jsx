@@ -18,7 +18,7 @@ function AboutMe() {
             <h1>             <img className="monacoImage" src="src/assets/Monaco.png" alt="Me in Monaco" />About Me             <img className="weddingImage" src="src/assets/wedding.png" alt="Wedding Image" /></h1>
 
             <p> 
-            Hey! My name is Paul.  I’m from New Jersey originally but have lived in Delaware a large majority of my life.  
+            Hey! My name is Paul. <br></br> I’m from New Jersey originally but have lived in Delaware a large majority of my life.  
 
             I attended college in Newark, Delaware and Nashville, Tennessee where I earned an undergrad degree in business.
         
