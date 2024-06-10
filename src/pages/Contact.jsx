@@ -3,6 +3,8 @@ import '../styles/Contact.css';
 import { useState } from 'react';
 import { motion } from "framer-motion";
 
+import linkedInImage from "../assets/contactMe/linkedin.png"
+
 function Contact() {
 
         const [formData, setFormData] = useState({
@@ -59,9 +61,12 @@ function Contact() {
         <div className="contact-container">
             <h1>Contact Me</h1>
 
-            <p>Have a question or want to get in touch?  
+            <div className='divider'></div>
+
+            <p> Have a question or want to get in touch? </p>  
             
-                Feel free to reach out! 
+            <p> Feel free to reach out! </p>
+            <p>
                 Fill out the form below, email me, or checkout one of the links below.
             </p>
 
@@ -88,7 +93,7 @@ function Contact() {
             <div className="contactInfo">
             <ul><a href="mailto:PaulRuszkay@gmail.com"> 📧 Email:  PaulRuszkay@gmail.com </a></ul>
             <ul><a href="https://github.com/PaulRusz"> 📁 GitHub: github.com/PaulRusz </a></ul>
-            <ul><img className="linkedIn" src="src/assets/contactMe/linkedin.png" alt="LinkedIn"></img><a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/"> Linkedin - Paul Ruszkay </a></ul>
+            <ul><img src={linkedInImage} className="linkedIn" alt="LinkedIn"></img><a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/"> Linkedin - Paul Ruszkay </a></ul>
             </div>
 
         </div>

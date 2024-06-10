@@ -10,6 +10,12 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0)
 }
+
+.contact-container p {
+    font-size: 20px;
+    line-height: .5;
+}
+
 .contact-form { 
     display: flex;
     flex-direction: column;
@@ -23,7 +29,7 @@
 }
 
 .contact-form p {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .name {

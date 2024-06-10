@@ -14,3 +14,10 @@
     margin-bottom: 20px;
     align-items: center;
 }
+
+.divider2 {
+    width: 50%;
+    height: 1px;
+    background-color: #06d9ff;
+    margin: 20px 0;
+}
