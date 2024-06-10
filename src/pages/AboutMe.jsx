@@ -2,7 +2,7 @@
 import '../styles/AboutMe.css';
 import { motion } from "framer-motion";
 
-import monacoImage from "src/assets/Monaco.png"; 
+import monacoImage from "../assets/Monaco.png"; 
 
 function AboutMe() {
 
@@ -17,7 +17,7 @@ function AboutMe() {
       >
 
         <div className="about-me-container">
-            <h1>             <img src={monacoImage}  className="monacoImage"  alt="Me in Monaco" />About Me             <img className="weddingImage" src="src/assets/wedding.png" alt="Wedding Image" /></h1>
+            <h1>             <img src={monacoImage}  className="monacoImage"  alt="Me in Monaco" />About Me             <img className="weddingImage" src="../assets/wedding.png" alt="Wedding Image" /></h1>
 
             <p>Hey there! I'm Paul, a New Jersey native who has called Delaware home for most of my life.</p>
       <p>My educational journey took me to Newark, Delaware, and Nashville, Tennessee, where I earned a bachelor's degree in business. However, my passion for technology led me down a different path.</p>
