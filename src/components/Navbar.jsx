@@ -18,7 +18,7 @@ function Navbar() {
 
       <div className={`links ${showMenu ? "show" : ""}`}>
         <Link to="/" className="links">
-          About Me
+          About
         </Link>
         <Link to="/portfolio" className="links">
           Portfolio

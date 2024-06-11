@@ -74,16 +74,15 @@
         display: none; /* Hide the links by default on smaller screens */
         flex-direction: column; /* Display the links vertically on smaller screens */
         position: relative;
-        top: 60px; /* Adjust the top position to align with the navbar */
-        background: #003039; /* Set background color for the dropdown menu */
+        top: 70px; /* Adjust the top position to align with the navbar */
+        background: transparent; /* Set background color for the dropdown menu */
         width: 50%;
-        max-height: 50px; /* Set a maximum height for the dropdown menu */
         text-align: center;
         overflow-x: visible;
+        border-radius: 20%;
     }
 
     .links a {
         display: block;
-        padding: 10px;
     }
 }
