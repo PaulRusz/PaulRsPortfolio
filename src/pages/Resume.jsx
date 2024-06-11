@@ -26,6 +26,7 @@ function Resume() {
                     Background:
                     - what Ive done and what I am good at tech wise? Profeciencies
                 </p>
+                
         </div>
 
         <div className='divider2'></div>
@@ -71,7 +72,7 @@ function Resume() {
                     <li>NoSQL</li>
                 </ul>
                 <div className='divider'></div>
-                
+
                 <h2>Development Tools</h2>
                 <ul>
                     <li>Visual Studio Code</li>
