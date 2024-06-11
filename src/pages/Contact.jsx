@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 
 import linkedInImage from "../assets/contactMe/linkedin.png"
 
+
+
 function Contact() {
 
         const [formData, setFormData] = useState({

@@ -33,6 +33,10 @@
     margin: 20px 0;
 }
 
+.divider3 {
+    width: 25%;
+}
+
 .resume-container2 {
     display: flex;
     margin-top: 25px;

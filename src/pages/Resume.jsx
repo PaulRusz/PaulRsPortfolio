@@ -40,12 +40,16 @@ function Resume() {
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
+                <div className='divider'></div>
+
                 <h2>Frontend Tech</h2>
                 <ul>
                     <li>React.js</li>
                     <li>Bootstrap</li>
                     <li>Responsive Web Design</li>
                 </ul>
+                <div className='divider'></div>
+
                 <h2>BackEnd Tech</h2>
                 <ul>
                     <li>Node.js</li>
@@ -59,15 +63,21 @@ function Resume() {
                     <li>Heroku</li>
                     <li>Netlify</li>
                 </ul>
+                <div className='divider'></div>
+
                 <h2>Databases</h2>
                 <ul>
                     <li>SQL</li>
                     <li>NoSQL</li>
                 </ul>
+                <div className='divider'></div>
+                
                 <h2>Development Tools</h2>
                 <ul>
                     <li>Visual Studio Code</li>
                 </ul>
+                <div className='divider'></div>
+
                 <h2>Other Skills</h2>
                 <ul>
                     <li>Problem-Solving</li>

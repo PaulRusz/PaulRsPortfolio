@@ -32,10 +32,19 @@
     padding-right: 55px;
  }
 
-.weddingImage, .monacoImage {
+.image {
     height: 200px;
     width: 200px;
     padding-bottom: 25px;
+    transform: rotate(325deg);
 
 }
 
+.weddingImage {
+    transform: rotate(325deg);
+}
+
+/* Reset the transform for other images with the "image" class */
+.image:not(.weddingImage) {
+    transform: none;
+}
